@@ -1,0 +1,18 @@
+{
+  "extends": "@vue/tsconfig/tsconfig.web.json",
+  "include": ["env.d.ts", "src/**/*", "src/**/*.vue", "public/assets", "Form"],
+  "compilerOptions": {
+    "ignoreDeprecations": "5.0",
+    "baseUrl": ".",
+    "noImplicitAny":false,
+    "paths": {
+      "@/*": ["./src/*"]
+    }
+  },
+  "lib": ["WebWorker"],
+  "references": [
+    {
+      "path": "./tsconfig.node.json"
+    }
+  ]
+}
